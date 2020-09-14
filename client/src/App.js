@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import SignIn from './pages/SignIn'
 import NavBar from './components/NavBar';
 import SignUp from './pages/SignUp';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+          <Route exact path="/profile">
+            <Profile />
           </Route>
           <Route exact path="/signin">
             <SignIn />
